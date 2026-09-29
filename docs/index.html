@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="image" href="/offyield-logo.png" />
+    <link
+      rel="stylesheet"
+      href="/assets/styles-fiWeEwJW.css"
+      data-precedence="default"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600&amp;display=swap"
+      data-precedence="default"
+    />
+    <title>Docs | Offyield</title>
+    <meta name="theme-color" content="#04170d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Offyield" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@offyield" />
+    <meta name="twitter:creator" content="@offyield" />
+    <meta
+      name="description"
+      content="How Offyield works: the locked-principal vault, spendable interest, adding funds, cards, withdrawing, and the risks. Guides and FAQ."
+    />
+    <meta property="og:title" content="Docs | Offyield" />
+    <meta
+      property="og:description"
+      content="Guides for Offyield: spend your interest, never your principal."
+    />
+    <link rel="modulepreload" href="/assets/index-Dl_p4h_u.js" />
+    <link rel="modulepreload" href="/assets/jsx-runtime-C27Mmbu5.js" />
+    <link rel="modulepreload" href="/assets/docs-DEJCBWbI.js" />
+    <link rel="modulepreload" href="/assets/features-BAGssNv0.js" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+  </head>
+  <body>
+    <!--$-->
+    <div id="site" class="legal docs">
+      <nav class="legal-nav">
+        <a href="/" class="legal-brand"
+          ><img
+            class="brand-mark"
+            src="/offyield-logo.png"
+            alt="Offyield"
+            width="132"
+            height="132"
+        /></a>
+        <div class="legal-nav-links">
+          <a href="/">Home</a
+          ><a
+            class="active active"
+            href="/docs"
+            data-status="active"
+            aria-current="page"
+            >Docs</a
+          ><a href="/dashboard">Open app</a>
+        </div>
+      </nav>
+      <header class="legal-hero">
+        <div class="legal-shell">
+          <span class="eyebrow anim rise" data-delay="0"
+            ><span class="dot"></span>Documentation</span
+          >
+          <h1 class="legal-title anim rise" data-delay="60">
+            Offyield <span class="accent">Docs</span>
+          </h1>
+          <p class="legal-lede anim rise" data-delay="120">
+            Everything you need to use Offyield: how the vault keeps your
+            principal locked, how interest accrues, how to add funds, buy cards
+            and exit, and what each screen of the app shows you.
+          </p>
+          <div class="legal-meta anim rise" data-delay="180">
+            <span
+              >Last updated
+              <!-- -->September 29, 2026</span
+            ><span class="legal-dot"></span
+            ><span
+              >27<!-- -->
+              articles</span
+            >
+          </div>
+          <div class="docs-quick anim rise" data-delay="240">
+            <a href="#introduction" class="docs-quick-card"
+              ><span class="docs-quick-k">Getting started</span
+              ><span class="docs-quick-d"
+                >What Offyield is, and your first deposit.</span
+              ></a
+            ><a href="#the-one-rule" class="docs-quick-card"
+              ><span class="docs-quick-k">Core concepts</span
+              ><span class="docs-quick-d"
+                >Principal, yield, and the rules the contract enforces.</span
+              ></a
+            ><a href="#overview" class="docs-quick-card"
+              ><span class="docs-quick-k">Using the app</span
+              ><span class="docs-quick-d"
+                >A tour of every tab in the dashboard.</span
+              ></a
+            ><a href="#getting-usdg" class="docs-quick-card"
+              ><span class="docs-quick-k">Adding funds</span
+              ><span class="docs-quick-d"
+                >Getting USDG and gas onto Robinhood Chain.</span
+              ></a
+            ><a href="#prepaid-cards" class="docs-quick-card"
+              ><span class="docs-quick-k">Cards</span
+              ><span class="docs-quick-d"
+                >Turn your interest into a prepaid card.</span
+              ></a
+            ><a href="#withdraw" class="docs-quick-card"
+              ><span class="docs-quick-k">Withdrawing</span
+              ><span class="docs-quick-d"
+                >Getting your principal and interest back out.</span
+              ></a
+            ><a href="#security" class="docs-quick-card"
+              ><span class="docs-quick-k">Security &amp; risk</span
+              ><span class="docs-quick-d"
+                >Audit, custody, and what can go wrong.</span
+              ></a
+            ><a href="#faq" class="docs-quick-card"
+              ><span class="docs-quick-k">FAQ</span
+              ><span class="docs-quick-d"
+                >Quick answers to common questions.</span
+              ></a
+            >
+          </div>
+        </div>
+      </header>
+      <div class="legal-rule" aria-hidden="true"></div>
+      <div class="docs-layout">
+        <aside class="docs-side" aria-label="Documentation">
+          <div class="docs-side-group">
+            <h4>Getting started</h4>
+            <a href="#introduction" class="active" aria-current="location"
+              >Introduction</a
+            ><a href="#requirements" class="">What you need</a
+            ><a href="#first-deposit" class="">Your first deposit</a>
+          </div>
+          <div class="docs-side-group">
+            <h4>Core concepts</h4>
+            <a href="#the-one-rule" class="">The one rule</a
+            ><a href="#yield" class="">Where the yield comes from</a
+            ><a href="#fail-closed" class="">Fails closed</a
+            ><a href="#numbers" class="">How the numbers update</a>
+          </div>
+          <div class="docs-side-group">
+            <h4>Using the app</h4>
+            <a href="#overview" class="">Overview</a
+            ><a href="#vault" class="">Vault</a
+            ><a href="#spend" class="">Spend</a
+            ><a href="#activity" class="">Activity</a
+            ><a href="#chain-tab" class="">Chain</a
+            ><a href="#wallet-session" class="">Wallet and session</a>
+          </div>
+          <div class="docs-side-group">
+            <h4>Adding funds</h4>
+            <a href="#getting-usdg" class="">Getting USDG</a
+            ><a href="#gas" class="">Gas</a>
+          </div>
+          <div class="docs-side-group">
+            <h4>Cards</h4>
+            <a href="#prepaid-cards" class="">Prepaid cards</a
+            ><a href="#buying-a-card" class="">Buying a card</a
+            ><a href="#cashback" class="">Cashback</a>
+          </div>
+          <div class="docs-side-group">
+            <h4>Withdrawing</h4>
+            <a href="#withdraw" class="">Withdraw principal</a
+            ><a href="#close-position" class="">Close position</a
+            ><a href="#impairment" class=""
+              >If the lending market takes a loss</a
+            ><a href="#emergency-exit" class="">Emergency exit</a
+            ><a href="#pausing" class="">What a pause does</a>
+          </div>
+          <div class="docs-side-group">
+            <h4>Security &amp; risk</h4>
+            <a href="#security" class="">Security</a
+            ><a href="#risks" class="">Risks</a
+            ><a href="#stocks" class="">Stock tokens</a>
+          </div>
+          <div class="docs-side-group">
+            <h4>FAQ</h4>
+            <a href="#faq" class="">Frequently asked questions</a>
+          </div>
+        </aside>
+        <main class="docs-main">
+          <div class="docs-group">
+            <div class="docs-group-head reveal">
+              <span class="eyebrow"
+                ><span class="dot"></span>Getting started</span
+              >
+            </div>
+            <section class="legal-section docs-page reveal" id="introduction">
+              <div class="legal-section-index">01</div>
+              <div class="legal-section-copy">
+                <h2>Introduction</h2>
+                <p>
+                  Offyield is a non-custodial app on Robinhood Chain built
+                  around one rule: you spend the interest, never the principal.
+                  You deposit USDG, it is supplied to a single lending market,
+                  and only the interest it earns ever becomes spendable. Your
+                  deposit stays locked to spending by the smart contract itself,
+                  not by a setting or a promise.
+                </p>
+                <ul>
+                  <li>
+                    Principal — what you deposited. It is never spendable, and
+                    you can withdraw it whenever you want.
+                  </li>
+                  <li>
+                    Spendable yield — interest accrued, minus interest you have
+                    already spent or taken out. Nothing else ever feeds it.
+                  </li>
+                  <li>
+                    Non-custodial — you act from your own wallet. Offyield never
+                    holds your funds or your keys.
+                  </li>
+                </ul>
+                <div class="legal-note">
+                  Offyield is in early access. It runs with real USDG on
+                  Robinhood Chain, with deposits capped while we scale up.
+                </div>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="requirements">
+              <div class="legal-section-index">02</div>
+              <div class="legal-section-copy">
+                <h2>What you need</h2>
+                <div class="docs-table-wrap">
+                  <table class="docs-table">
+                    <thead>
+                      <tr>
+                        <th>Item</th>
+                        <th>Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Wallet</td>
+                        <td>
+                          MetaMask (browser extension, or the MetaMask in-app
+                          browser on a phone).
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Network</td>
+                        <td>
+                          Robinhood Chain. The app asks your wallet to switch —
+                          and adds the network if it’s missing.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Deposit asset</td>
+                        <td>
+                          USDG, the Paxos-issued stablecoin native to Robinhood
+                          Chain.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Gas</td>
+                        <td>
+                          A little ETH on Robinhood Chain. About $1 of ETH
+                          covers many deposits.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>
+                  Access to the app is not available from sanctioned regions
+                  (Cuba, Iran, North Korea and Syria). The public website stays
+                  readable everywhere.
+                </p>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="first-deposit">
+              <div class="legal-section-index">03</div>
+              <div class="legal-section-copy">
+                <h2>Your first deposit</h2>
+                <ol class="docs-steps">
+                  <li>
+                    <b>Connect MetaMask</b
+                    ><span
+                      >Open the app and connect. Approve the switch to Robinhood
+                      Chain if your wallet asks.</span
+                    >
+                  </li>
+                  <li>
+                    <b>Get a little ETH for gas</b
+                    ><span
+                      >Any small amount of ETH on Robinhood Chain pays for your
+                      transactions.</span
+                    >
+                  </li>
+                  <li>
+                    <b>Hold USDG in your wallet</b
+                    ><span
+                      >This is what you will deposit. See “Adding funds” for the
+                      ways to get it.</span
+                    >
+                  </li>
+                  <li>
+                    <b>Deposit from the Vault tab</b
+                    ><span
+                      >Enter an amount and sign twice: first approve this exact
+                      amount, then deposit it.</span
+                    >
+                  </li>
+                </ol>
+                <p>
+                  Once the deposit confirms, your principal shows as locked and
+                  interest starts accruing immediately. The spendable number on
+                  Overview grows on its own; there is nothing to claim.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="docs-group">
+            <div class="docs-group-head reveal">
+              <span class="eyebrow"
+                ><span class="dot"></span>Core concepts</span
+              >
+            </div>
+            <section class="legal-section docs-page reveal" id="the-one-rule">
+              <div class="legal-section-index">04</div>
+              <div class="legal-section-copy">
+                <h2>The one rule</h2>
+                <p>
+                  Principal and spendable yield are separate accounting values
+                  inside the vault contract. A spend can only draw from
+                  spendable yield. If a charge is larger than your accrued
+                  interest it is declined whole — there is no partial fill, and
+                  no fallback path that tops up the shortfall from your deposit.
+                </p>
+                <p>
+                  Principal leaves only when you explicitly withdraw it, in full
+                  or in part, straight back to your own wallet. A spend can
+                  never trigger it.
+                </p>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="yield">
+              <div class="legal-section-index">05</div>
+              <div class="legal-section-copy">
+                <h2>Where the yield comes from</h2>
+                <p>
+                  Deposits are supplied to one lending market on Robinhood
+                  Chain: the Steakhouse USDG vault on Morpho. The interest is
+                  plain lending interest paid by borrowers. There is no
+                  validator staking, no leverage, no strategy rotation and no
+                  rehypothecation, and your deposit and its interest never touch
+                  the $OFY token.
+                </p>
+                <div class="legal-note docs-warn">
+                  The rate is variable and set by the lending market. It is not
+                  fixed, promised or guaranteed, and past rates don’t predict
+                  future ones.
+                </div>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="fail-closed">
+              <div class="legal-section-index">06</div>
+              <div class="legal-section-copy">
+                <h2>Fails closed</h2>
+                <p>
+                  When the app cannot read the chain, it assumes the safest
+                  thing rather than guessing:
+                </p>
+                <ul>
+                  <li>
+                    Spendable shows 0 and spending is disabled (“Chain
+                    unreachable — showing 0, spending disabled”).
+                  </li>
+                  <li>
+                    Deposits and card checkout are disabled until reads recover.
+                  </li>
+                  <li>
+                    Withdrawals stay available — the transaction itself verifies
+                    everything on-chain.
+                  </li>
+                  <li>
+                    Activity hides vault events it can’t read, instead of
+                    showing stale ones.
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="numbers">
+              <div class="legal-section-index">07</div>
+              <div class="legal-section-copy">
+                <h2>How the numbers update</h2>
+                <p>
+                  Every balance is read live from the vault contract about every
+                  15 seconds, all from the same block, so the figures always
+                  agree with each other. Nothing is estimated in your browser.
+                </p>
+                <div class="docs-table-wrap">
+                  <table class="docs-table">
+                    <thead>
+                      <tr>
+                        <th>Figure</th>
+                        <th>Meaning</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Principal (locked)</td>
+                        <td>
+                          What you deposited, minus principal you withdrew.
+                          Never spendable.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Spendable yield</td>
+                        <td>Interest you can spend right now.</td>
+                      </tr>
+                      <tr>
+                        <td>Position value</td>
+                        <td>
+                          What your position is worth in the lending market
+                          today.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Interest earned</td>
+                        <td>
+                          Interest already paid out plus interest spendable now.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Supply APY</td>
+                        <td>Variable, set by the lending market.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="docs-group">
+            <div class="docs-group-head reveal">
+              <span class="eyebrow"
+                ><span class="dot"></span>Using the app</span
+              >
+            </div>
+            <section class="legal-section docs-page reveal" id="overview">
+              <div class="legal-section-index">08</div>
+              <div class="legal-section-copy">
+                <h2>Overview</h2>
+                <p>
+                  Your home screen. It leads with spendable yield, then
+                  principal locked and interest earned, with quick actions to
+                  Spend yield or Add principal.
+                </p>
+                <ul>
+                  <li>
+                    Stat tiles for principal, position value, interest paid out
+                    (all time) and the current supply APY.
+                  </li>
+                  <li>
+                    “Interest earned this session” — a live chart while the page
+                    is open.
+                  </li>
+                  <li>
+                    Recent activity — your latest vault events from the past 30
+                    days.
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="vault">
+              <div class="legal-section-index">09</div>
+              <div class="legal-section-copy">
+                <h2>Vault</h2>
+                <p>Deposit and withdraw USDG principal.</p>
+                <ul>
+                  <li>
+                    Deposits take two signatures: approve this exact amount,
+                    then deposit.
+                  </li>
+                  <li>
+                    Early-access limits are read live from the contract and
+                    shown above the form — a per-deposit maximum and the room
+                    left in the vault.
+                  </li>
+                  <li>
+                    The form refuses a deposit before asking you to sign if it
+                    can’t go through: deposits paused, the vault full, not
+                    enough USDG, or over the per-deposit limit.
+                  </li>
+                </ul>
+                <div class="legal-note docs-warn">
+                  Your deposit is supplied to a lending market and can lose
+                  value if that market takes a loss. See “Risks”.
+                </div>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="spend">
+              <div class="legal-section-index">10</div>
+              <div class="legal-section-copy">
+                <h2>Spend</h2>
+                <p>
+                  Draws from accrued interest only. You can send interest as
+                  USDG to your own wallet, or turn it into a prepaid card from
+                  the card shop.
+                </p>
+                <p>
+                  Enter more than your accrued interest and the app tells you up
+                  front that the contract will decline it. Spending is also
+                  disabled while the vault is paused, if your position is
+                  impaired, or when the chain can’t be reached.
+                </p>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="activity">
+              <div class="legal-section-index">11</div>
+              <div class="legal-section-copy">
+                <h2>Activity</h2>
+                <p>
+                  The last 30 days of your position. Vault events come straight
+                  from the chain: deposits, yield spends, principal withdrawals,
+                  impaired (pro-rata) withdrawals, position exits, emergency
+                  exits and lending-market devaluations.
+                </p>
+                <p>
+                  Actions that happen outside the vault — such as card orders,
+                  swaps or bridges — are recorded in this browser only, so they
+                  appear on the device you used.
+                </p>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="chain-tab">
+              <div class="legal-section-index">12</div>
+              <div class="legal-section-copy">
+                <h2>Chain</h2>
+                <p>
+                  Network facts for Robinhood Chain and a short explainer of how
+                  the dashboard numbers update.
+                </p>
+                <div class="docs-table-wrap">
+                  <table class="docs-table">
+                    <thead>
+                      <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Network</td>
+                        <td>Robinhood Chain</td>
+                      </tr>
+                      <tr>
+                        <td>Type</td>
+                        <td>
+                          Arbitrum Orbit rollup, EVM-compatible, settles to
+                          Ethereum
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Chain id</td>
+                        <td>4663</td>
+                      </tr>
+                      <tr>
+                        <td>Stablecoin</td>
+                        <td>USDG (Paxos)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="wallet-session">
+              <div class="legal-section-index">13</div>
+              <div class="legal-section-copy">
+                <h2>Wallet and session</h2>
+                <ul>
+                  <li>Refreshing the page keeps you connected.</li>
+                  <li>
+                    After 30 minutes without activity you are disconnected
+                    automatically.
+                  </li>
+                  <li>
+                    Disconnect revokes the site’s permission in MetaMask and
+                    returns you to the home page.
+                  </li>
+                  <li>
+                    Before every transaction the app confirms your wallet is on
+                    Robinhood Chain.
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="docs-group">
+            <div class="docs-group-head reveal">
+              <span class="eyebrow"><span class="dot"></span>Adding funds</span>
+            </div>
+            <section class="legal-section docs-page reveal" id="getting-usdg">
+              <div class="legal-section-index">14</div>
+              <div class="legal-section-copy">
+                <h2>Getting USDG</h2>
+                <p>
+                  You need USDG on Robinhood Chain in your MetaMask wallet
+                  before you deposit. Always send a small test amount first, and
+                  make sure it’s the genuine USDG token on the right network.
+                </p>
+                <ul>
+                  <li>
+                    Any wallet or exchange that can send USDG on Robinhood Chain
+                    works.
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="gas">
+              <div class="legal-section-index">15</div>
+              <div class="legal-section-copy">
+                <h2>Gas</h2>
+                <p>
+                  Transactions on Robinhood Chain are paid in ETH. A very small
+                  amount is enough — about $1 lasts many deposits. If your
+                  balance runs low, the app warns you before you try to sign.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="docs-group">
+            <div class="docs-group-head reveal">
+              <span class="eyebrow"><span class="dot"></span>Cards</span>
+            </div>
+            <section class="legal-section docs-page reveal" id="prepaid-cards">
+              <div class="legal-section-index">16</div>
+              <div class="legal-section-copy">
+                <h2>Prepaid cards</h2>
+                <p>
+                  Today you can turn your interest into a one-time prepaid card
+                  that works online worldwide, supplied by our card provider,
+                  CryptoRefills. A reloadable Offyield card is still in
+                  development.
+                </p>
+                <div class="docs-table-wrap">
+                  <table class="docs-table">
+                    <thead>
+                      <tr>
+                        <th>Card</th>
+                        <th>Notes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Visa</td>
+                        <td>
+                          US-issued. Works at most online Visa merchants
+                          worldwide. Issuer fees apply; expires 12 months after
+                          purchase.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>American Express</td>
+                        <td>
+                          US only. Funds expire after 6 months. No recurring
+                          billing, no ATM.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Gift cards</td>
+                        <td>
+                          Brand gift cards across about 100 storefront
+                          countries.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="legal-note docs-warn">
+                  These are one-time USD cards for online use. They are not
+                  reloadable and have no 3-D Secure, so some (mostly EU)
+                  merchants may decline them.
+                </div>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="buying-a-card">
+              <div class="legal-section-index">17</div>
+              <div class="legal-section-copy">
+                <h2>Buying a card</h2>
+                <ol class="docs-steps">
+                  <li>
+                    <b>Pick a card and amount</b
+                    ><span
+                      >Choose the brand and value. The exact total, fees
+                      included, is shown before you pay.</span
+                    >
+                  </li>
+                  <li>
+                    <b>Enter your details</b
+                    ><span
+                      >Full name where the issuer needs it, and the email the
+                      card is delivered to. A delivered card can’t be re-sent to
+                      another email.</span
+                    >
+                  </li>
+                  <li>
+                    <b>Review and sign</b
+                    ><span
+                      >Confirm the card terms and sign the order. Signing is
+                      free and moves no money.</span
+                    >
+                  </li>
+                  <li>
+                    <b>Pay</b
+                    ><span
+                      >Pay the exact amount shown, on the network shown, within
+                      the time shown.</span
+                    >
+                  </li>
+                  <li>
+                    <b>Receive it by email</b
+                    ><span>Delivery is usually within minutes of payment.</span>
+                  </li>
+                </ol>
+                <ul></ul>
+                <p>
+                  The card provider adds a fee of around 12%, which varies by
+                  card. For example, about $33.60 of interest buys a $30 prepaid
+                  Visa, fees included. Offyield charges you no fee of its own.
+                </p>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="cashback">
+              <div class="legal-section-index">18</div>
+              <div class="legal-section-copy">
+                <h2>Cashback</h2>
+                <p>
+                  Once cashback is live, $OFY holders earn 5% cashback in USDG
+                  on prepaid cards bought through the app. It’s paid once the
+                  card is delivered, and each order shows its card reference
+                  (OFY-…) so you can follow it.
+                </p>
+                <p>
+                  Cashback is funded separately. Your deposit and its interest
+                  never touch $OFY.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="docs-group">
+            <div class="docs-group-head reveal">
+              <span class="eyebrow"><span class="dot"></span>Withdrawing</span>
+            </div>
+            <section class="legal-section docs-page reveal" id="withdraw">
+              <div class="legal-section-index">19</div>
+              <div class="legal-section-copy">
+                <h2>Withdraw principal</h2>
+                <p>
+                  From the Vault tab, choose how much principal to take back. A
+                  healthy position pays exactly the amount asked, or the
+                  transaction cancels. Accrued interest stays spendable after a
+                  withdrawal.
+                </p>
+                <div class="legal-note">
+                  Principal withdrawals can never be paused — not by Offyield,
+                  not by anyone.
+                </div>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="close-position">
+              <div class="legal-section-index">20</div>
+              <div class="legal-section-copy">
+                <h2>Close position</h2>
+                <p>
+                  Takes everything out in one step — principal and all accrued
+                  interest. The app shows what you’ll receive and the minimum it
+                  will accept, and asks you to confirm before you sign.
+                </p>
+                <p>
+                  Closing works even if the Offyield website goes away: it is a
+                  direct call to the vault contract that nobody can pause or
+                  block.
+                </p>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="impairment">
+              <div class="legal-section-index">21</div>
+              <div class="legal-section-copy">
+                <h2>If the lending market takes a loss</h2>
+                <p>
+                  If the underlying market loses value, a position becomes
+                  impaired. Withdrawals then pay pro-rata at the position’s
+                  real, reduced value, and the shortfall is recorded. New
+                  deposits into an impaired position are refused until it’s
+                  settled.
+                </p>
+                <p>
+                  Before an impaired withdrawal, the app checks the payout and
+                  asks you to confirm a minimum. If the payout would come in
+                  below it, the transaction cancels itself and nothing moves.
+                </p>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="emergency-exit">
+              <div class="legal-section-index">22</div>
+              <div class="legal-section-copy">
+                <h2>Emergency exit</h2>
+                <p>
+                  If withdrawals or reads keep failing for a wallet that has a
+                  position, the app offers “Exit in kind”: your position is paid
+                  out as lending-market shares instead of USDG, which you can
+                  redeem at the market yourself. It can’t be paused or undone,
+                  so it asks you to confirm twice. The market may charge a small
+                  fee if it has to pull cash back first.
+                </p>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="pausing">
+              <div class="legal-section-index">23</div>
+              <div class="legal-section-copy">
+                <h2>What a pause does</h2>
+                <p>
+                  The vault can be paused in an emergency. A pause stops
+                  deposits and spending only. Withdrawals, closing a position
+                  and the emergency exit all keep working while paused.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="docs-group">
+            <div class="docs-group-head reveal">
+              <span class="eyebrow"
+                ><span class="dot"></span>Security &amp; risk</span
+              >
+            </div>
+            <section class="legal-section docs-page reveal" id="security">
+              <div class="legal-section-index">24</div>
+              <div class="legal-section-copy">
+                <h2>Security</h2>
+                <ul>
+                  <li>
+                    The vault contract is audited by Shieldify and its source is
+                    publicly verified. The audit report is linked in the footer.
+                  </li>
+                  <li>
+                    Offyield never has custody of your funds and never sees your
+                    private keys or seed phrase.
+                  </li>
+                  <li>
+                    Every flow — deposit, accrual, spend, withdraw — is proven
+                    end to end with small amounts before limits are raised.
+                  </li>
+                </ul>
+                <div class="legal-note docs-warn">
+                  Nobody from Offyield will ever DM you first or ask for your
+                  seed phrase. Anyone who does is a scammer.
+                </div>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="risks">
+              <div class="legal-section-index">25</div>
+              <div class="legal-section-copy">
+                <h2>Risks</h2>
+                <ul>
+                  <li>
+                    Smart-contract risk — code can contain bugs despite audits
+                    and testing.
+                  </li>
+                  <li>
+                    Lending-market risk — the underlying market can lose value,
+                    reducing what a position returns.
+                  </li>
+                  <li>
+                    Stablecoin risk — USDG could lose its peg or become
+                    illiquid.
+                  </li>
+                  <li>
+                    Availability risk — networks, RPCs, wallets or the website
+                    can be slow or down (the vault exit still works directly).
+                  </li>
+                  <li>
+                    No insurance — deposits are not bank deposits and are not
+                    covered by any government scheme.
+                  </li>
+                </ul>
+                <p>
+                  Only deposit what you’re prepared to lose. Read the full Terms
+                  of Service before using the app.
+                </p>
+              </div>
+            </section>
+            <section class="legal-section docs-page reveal" id="stocks">
+              <div class="legal-section-index">26</div>
+              <div class="legal-section-copy">
+                <h2>Stock tokens</h2>
+                <p>
+                  Where available, the Stocks tab lists Robinhood Stock Tokens
+                  with links to third-party venues where they trade. Offyield
+                  doesn’t issue, sell, recommend or route them, and takes no
+                  fee. The list is closed in the United States and to US
+                  persons, and in Canada, the UK and Switzerland — and stays
+                  closed if your region can’t be confirmed.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="docs-group">
+            <div class="docs-group-head reveal">
+              <span class="eyebrow"><span class="dot"></span>FAQ</span>
+            </div>
+            <section class="legal-section docs-page reveal" id="faq">
+              <div class="legal-section-index">27</div>
+              <div class="legal-section-copy">
+                <h2>Frequently asked questions</h2>
+                <div class="docs-faq">
+                  <details>
+                    <summary>Can Offyield spend or move my deposit?</summary>
+                    <p>
+                      No. The contract only allows spending from accrued
+                      interest, and principal only ever goes back to your own
+                      wallet when you withdraw it.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>Is there a minimum deposit or lock-up?</summary>
+                    <p>
+                      There’s no lock-up — withdraw whenever you want. During
+                      early access there’s a per-deposit maximum and a total
+                      vault cap, both shown live in the Vault tab.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>What does Offyield charge?</summary>
+                    <p>
+                      Nothing of its own. Third-party costs — network gas, the
+                      card provider’s fee, exchange or bridge fees — are shown
+                      before you sign.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>Why does my spendable show 0?</summary>
+                    <p>
+                      Either no interest has accrued yet, or the app can’t reach
+                      the chain and is failing closed. Your funds are
+                      unaffected; try again shortly.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>Which wallets work?</summary>
+                    <p>
+                      MetaMask, as a browser extension or through the MetaMask
+                      in-app browser on a phone.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>
+                      I don’t see a token I swapped for in the dashboard.
+                    </summary>
+                    <p>
+                      The dashboard shows your Offyield vault position —
+                      principal and interest in USDG. Other tokens in your
+                      wallet aren’t part of the vault.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>What happens if the website goes down?</summary>
+                    <p>
+                      Your position lives in the vault contract, not on the
+                      website. Withdrawing and closing are direct contract calls
+                      that can never be paused.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>Is the APY fixed?</summary>
+                    <p>
+                      No. It’s set by the lending market and changes with supply
+                      and demand.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </section>
+          </div>
+          <section class="legal-section legal-contact reveal">
+            <div class="legal-section-index">✦</div>
+            <div class="legal-section-copy">
+              <h2>Still stuck?</h2>
+              <p>
+                Reach the team at
+                <a href="mailto:team@offyield.com">team@offyield.com</a>, or ask
+                in
+                <a
+                  href="https://t.me/offyield"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Telegram</a
+                >. We will never DM you first and never ask for your seed
+                phrase. For security reports, please use a private channel
+                rather than a public post.
+              </p>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="brand">
+            <div class="logo">
+              <img
+                class="brand-mark lg"
+                src="/offyield-logo.png"
+                alt="Offyield"
+                width="140"
+                height="140"
+              />
+            </div>
+            <p>
+              Spend your interest, never your principal. A yield-only card built
+              on Robinhood Chain.
+            </p>
+          </div>
+          <div class="cols">
+            <div class="col">
+              <h4>Product</h4>
+              <a href="/">How it works</a
+              ><a
+                class="active active"
+                href="/docs"
+                data-status="active"
+                aria-current="page"
+                >Docs</a
+              ><a href="/dashboard">Open app</a>
+            </div>
+            <div class="col">
+              <h4>Legal</h4>
+              <a href="/privacy">Privacy Policy</a
+              ><a href="/terms">Terms of Service</a
+              ><a
+                href="https://github.com/shieldify-security/audits-portfolio/blob/main/reports/OffYield-Security-Review.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Audit</a
+              >
+            </div>
+            <div class="col">
+              <h4>Connect</h4>
+              <div class="social-btns">
+                <a
+                  class="social-btn"
+                  href="https://x.com/offyield"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Offyield on X"
+                  ><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.5L6.3 22H3.2l7.3-8.3L2.4 2h6.4l4.4 5.9L18.9 2Zm-1.1 18h1.7L8.3 3.8H6.5L17.8 20Z"
+                    ></path></svg
+                  ><span>@offyield</span></a
+                ><a
+                  class="social-btn"
+                  href="https://t.me/offyield"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Offyield on Telegram"
+                  ><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M21.9 4.3 18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.2c-.3.3-.5.5-1 .5l.4-4.9L18.6 6c.4-.3-.1-.5-.6-.2L7.1 12.6l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1.2 1.5Z"
+                    ></path></svg
+                  ><span>t.me/offyield</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      (function (a, f) {
+        let l;
+        try {
+          l = JSON.parse(sessionStorage.getItem(a) || "{}");
+        } catch {
+          return;
+        }
+        const n = l?.[f || history.state?.__TSR_key];
+        let c = !1;
+        for (const t in n) {
+          const e = n[t],
+            o = e?.scrollX,
+            s = e?.scrollY;
+          if (Number.isFinite(o) && Number.isFinite(s)) {
+            if (t === "window") scrollTo(o, s), (c = !0);
+            else if (t)
+              try {
+                const r = document.querySelector(t);
+                r && ((r.scrollLeft = o), (r.scrollTop = s));
+              } catch {}
+          }
+        }
+        if (c) return;
+        const i = location.hash.slice(1);
+        if (i) {
+          const t = history.state?.__hashScrollIntoViewOptions ?? !0;
+          if (t) {
+            const e = document.getElementById(i);
+            e && e.scrollIntoView(t);
+          }
+          return;
+        }
+        scrollTo(0, 0);
+      })("tsr-scroll-restoration-v1_3");
+      document.currentScript.remove();
+    </script>
+    <!--/$-->
+    <script class="$tsr" id="$tsr-stream-barrier">
+      (self.$R = self.$R || {})["tsr"] = [];
+      self.$_TSR = {
+        h() {
+          (this.hydrated = !0), this.c();
+        },
+        e() {
+          (this.streamEnded = !0), this.c();
+        },
+        c() {
+          this.hydrated &&
+            this.streamEnded &&
+            (delete self.$_TSR, delete self.$R.tsr);
+        },
+        p(e) {
+          this.initialized ? e() : this.buffer.push(e);
+        },
+        buffer: [],
+      };
+      $_TSR.router = (($R) =>
+        ($R[0] = {
+          manifest: ($R[1] = {
+            routes: ($R[2] = {
+              __root__: ($R[3] = {
+                preloads: ($R[4] = [
+                  "/assets/index-Dl_p4h_u.js",
+                  "/assets/jsx-runtime-C27Mmbu5.js",
+                ]),
+                scripts: ($R[5] = [
+                  ($R[6] = {
+                    attrs: ($R[7] = {
+                      type: "module",
+                      async: !0,
+                      src: "/assets/index-Dl_p4h_u.js",
+                    }),
+                  }),
+                ]),
+              }),
+              "/docs": ($R[8] = {
+                preloads: ($R[9] = [
+                  "/assets/docs-DEJCBWbI.js",
+                  "/assets/features-BAGssNv0.js",
+                ]),
+              }),
+            }),
+          }),
+          matches: ($R[10] = [
+            ($R[11] = {
+              i: "__root__ ",
+              u: 1790711420996,
+              s: "success",
+              ssr: !0,
+            }),
+            ($R[12] = {
+              i: " docs docs",
+              u: 1790711420998,
+              s: "success",
+              ssr: !0,
+            }),
+          ]),
+          lastMatchId: " docs docs",
+        }))($R["tsr"]);
+      $_TSR.e();
+      document.currentScript.remove();
+    </script>
+    <script type="module" async="" src="/assets/index-Dl_p4h_u.js"></script>
+  </body>
+</html>
