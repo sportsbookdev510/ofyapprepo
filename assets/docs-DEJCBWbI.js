@@ -926,38 +926,7 @@ function p() {
                   t.id
                 )
               ),
-              (0, c.jsxs)(`section`, {
-                className: `legal-section legal-contact reveal`,
-                children: [
-                  (0, c.jsx)(`div`, {
-                    className: `legal-section-index`,
-                    children: `✦`,
-                  }),
-                  (0, c.jsxs)(`div`, {
-                    className: `legal-section-copy`,
-                    children: [
-                      (0, c.jsx)(`h2`, { children: `Still stuck?` }),
-                      (0, c.jsxs)(`p`, {
-                        children: [
-                          `Reach the team at `,
-                          (0, c.jsx)(`a`, {
-                            href: `mailto:team@offyield.com`,
-                            children: `team@offyield.com`,
-                          }),
-                          `, or ask in `,
-                          (0, c.jsx)(`a`, {
-                            href: `https://t.me/offyield`,
-                            target: `_blank`,
-                            rel: `noopener noreferrer`,
-                            children: `Telegram`,
-                          }),
-                          `. We will never DM you first and never ask for your seed phrase. For security reports, please use a private channel rather than a public post.`,
-                        ],
-                      }),
-                    ],
-                  }),
-                ],
-              }),
+              
             ],
           }),
         ],
@@ -1033,26 +1002,16 @@ function p() {
                       children: [
                         (0, c.jsxs)(`a`, {
                           className: `social-btn`,
-                          href: `https://x.com/offyield`,
+                          href: `https://x.com/offyieldapp`,
                           target: `_blank`,
                           rel: `noopener noreferrer`,
                           "aria-label": `Offyield on X`,
                           children: [
                             l,
-                            (0, c.jsx)(`span`, { children: `@offyield` }),
+                            (0, c.jsx)(`span`, { children: `@offyieldapp` }),
                           ],
                         }),
-                        (0, c.jsxs)(`a`, {
-                          className: `social-btn`,
-                          href: `https://t.me/offyield`,
-                          target: `_blank`,
-                          rel: `noopener noreferrer`,
-                          "aria-label": `Offyield on Telegram`,
-                          children: [
-                            u,
-                            (0, c.jsx)(`span`, { children: `t.me/offyield` }),
-                          ],
-                        }),
+                        
                       ],
                     }),
                   ],
