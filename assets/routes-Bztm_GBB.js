@@ -148,7 +148,7 @@ var i = e(t(), 1),
         <div class="col"><h4>Product</h4><a href="#how">How it works</a><a href="#features">The one rule</a><a href="#chain">The chain</a><a href="/docs">Docs</a></div>
         <div class="col"><h4>App</h4><a href="/dashboard">Overview</a><a href="/dashboard">Get a card</a><a href="/dashboard">Vault</a><a href="/dashboard">Activity</a></div>
         <div class="col"><h4>Legal</h4><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="https://github.com/shieldify-security/audits-portfolio/blob/main/reports/OffYield-Security-Review.pdf" target="_blank" rel="noopener noreferrer">Audit</a></div>
-        <div class="col"><h4>Connect</h4><div class="social-btns"><a class="social-btn" href="https://x.com/offyield" target="_blank" rel="noopener noreferrer" aria-label="Offyield on X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.5L6.3 22H3.2l7.3-8.3L2.4 2h6.4l4.4 5.9L18.9 2Zm-1.1 18h1.7L8.3 3.8H6.5L17.8 20Z"/></svg><span>@offyield</span></a></div></div>
+        <div class="col"><h4>Connect</h4><div class="social-btns"><a class="social-btn" href="https://x.com/offyieldapp" target="_blank" rel="noopener noreferrer" aria-label="Offyield on X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.5L6.3 22H3.2l7.3-8.3L2.4 2h6.4l4.4 5.9L18.9 2Zm-1.1 18h1.7L8.3 3.8H6.5L17.8 20Z"/></svg><span>@offyieldapp</span></a></div></div>
       </div>
     </div>
   </footer>
